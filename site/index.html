@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Deutsche Bank interview coding challenge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <title>Currency Ticker - Deutsche Bank Coding challenge</title>
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+        <script src="stomp.js"></script>
+        <script src="sparkline.js"></script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">
+                You are using an <strong>outdated</strong> browser. 
+                Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+            </p>
+        <![endif]-->
+        <section class="content">
+            <table class="currencyTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Best Bid</th>
+                        <th>Best Ask</th>
+                        <th>Open Bid</th>
+                        <th>Open Ask</th>
+                        <th>Last Change Ask</th>
+                        <th>Last Change Bid</th>
+                        <th>Mid Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <template id="templateRow">
+                <tr>
+                    <td class="currency-name"></td>
+                    <td class="currency-best-bid"></td>
+                    <td class="currency-best-ask"></td>
+                    <td class="currency-open-bid"></td>
+                    <td class="currency-open-ask"></td>
+                    <td class="currency-last-change-ask"></td>
+                    <td class="currency-last-change-bid"></td>
+                    <td>
+                        <span class="currency-table-sparkline"></span>
+                    </td>
+                </tr>
+            </template>
+        </section>
+    <script src="bundle.js"></script>
+    </body>
+</html>
